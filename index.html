@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="s">hii kani</h1>
+    <p class="title"> welcome to csbs</p>
+    <P class="title"> mern stack internship</P>
+    <h3>kanika</h3>
+    <h3>senthil</h3>
+    <h3>baby</h3>
+    <h3>kaviyen</h3>
+    <h3>kani</h3>
+    <button id="btn">click</button>
+    <h4 id="h">button color change</h4>
+    <button id="btn1">click</button>
+    <h5 id="text">double click</h5>
+</body>
+<script>
+    //document.getElementById("s").innerText="hi baby";
+    document.getElementById("s").style.color="red";
+    let elements = document.getElementsByClassName("title");
+    for(let i=0;i<elements.length;i++)
+    {
+        elements[i].style.backgroundColor="green";
+        elements[i].style.fontize="50px";
+    }
+    //document.getElementsByTagName("p").style.fontSize="100px";
+    let ele=document.querySelectorAll("h3");
+    //ele.style.fontSize="50px";
+    //ele.style.textDecoration="underline";
+    for(let i=0;i<ele.length;i++)
+    {
+        ele[i].style.color="blue";
+    }
+    let button=document.getElementById("btn")
+    button.addEventListener("click",()=>{
+       // document.getElementById("h").innerHTML="button executed";
+        document.getElementById("h").style.color="red";
+    })
+/*
+    let button=document.getElementById("btn")
+    button.addEventListener("check",myfunction())
+    function myfunction(){
+        document.getElementById("h4").style.color="red";
+    }*/
+
+    let button1=document.getElementById("btn1")
+    button1.addEventListener("dblclick",()=>{
+        document.getElementById("text").innerHTML="senthil baby"
+    })
+</script>
+<script src="script.js"></script>
+</html>
